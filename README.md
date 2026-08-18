@@ -4,8 +4,11 @@
 
 A public, fast money manager for tracking **income, expenses and savings**. Built as a mobile-first web app and wrapped in an Android APK via Capacitor. Your data is encrypted and stored in **your own Google Drive** — not on any third-party server.
 
-- Live web app: [sumal.vercel.app](https://sumal.vercel.app)
-- Android: download the latest APK from the [Releases](https://github.com/AungThuMyint/SuMal/releases) page
+Landing Page : https://aungthumyint.github.io/SuMal
+
+Web App : https://sumal.vercel.app
+
+Android APK : [Releases](https://github.com/AungThuMyint/SuMal/releases/latest)
 
 ## Application Features
 
