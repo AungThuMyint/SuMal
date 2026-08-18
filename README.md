@@ -1,12 +1,14 @@
-# SuMal - MoneyManager
-
 <img src="icon-512.png" alt="SuMal logo" width="120" />
 
 A private, fast money manager for tracking income, expenses and savings. Your data is encrypted and stored only in your own Google Drive.
 
-- **Landing page**: https://aungthumyint.github.io/SuMal
-- **Web app**: https://sumal.vercel.app
-- **Android APK**: download from [Releases](https://github.com/AungThuMyint/SuMal/releases/latest)
+Landing Page : https://aungthumyint.github.io/SuMal
+
+Web App : https://sumal.vercel.app
+
+Android APK : [⬇️ Download APK](https://github.com/AungThuMyint/SuMal/releases/latest)
+
+Developed by Aung Thu Myint © 2026
 
 ## Application Features
 
@@ -30,10 +32,10 @@ A private, fast money manager for tracking income, expenses and savings. Your da
 
 ## Supported Platforms
 
-| Platform | Description | Get it |
-| -------- | ----------- | ------ |
-| Android  | Native APK built with Capacitor | [Download APK](https://github.com/AungThuMyint/SuMal/releases/latest) |
-| Web / PWA| Installable web app hosted on Vercel | [sumal.vercel.app](https://sumal.vercel.app) |
+| Platform | Description |
+| -------- | ----------- |
+| Android  | Native APK built with Capacitor |
+| Web / PWA| Installable web app hosted on Vercel |
 
 ## Built With
 
@@ -46,9 +48,3 @@ A private, fast money manager for tracking income, expenses and savings. Your da
 | Sync      | Google Drive API (Google OAuth)     |
 | Storage   | AES-256-GCM encrypted, PBKDF2 key derivation |
 | Hosting   | Vercel                              |
-
-## License
-
-All rights reserved © 2026 Aung Thu Myint. This project is not open source; the source code and assets may not be reproduced, distributed, or modified without prior written permission.
-
-Developed by Aung Thu Myint.
