@@ -1,15 +1,15 @@
 # SuMal - MoneyManager
 
-<p align="center"><img src="Logo/logo.png" alt="SuMal logo" width="120" /></p>
+<p align="center"><img src="Logo/Logo.png" alt="SuMal logo" width="120" /></p>
 
 A public, fast money manager for tracking **income, expenses and savings**. Built as a mobile-first web app and wrapped in an Android APK via Capacitor. Your data is encrypted and stored in **your own Google Drive** — not on any third-party server.
 
 <p align="center">
-  <a href="https://aungthumyint.github.io/SuMal/"><img src="https://img.shields.io/badge/-Landing%20Page-0a1628?style=for-the-badge&logo=googlechrome&logoColor=10b981&labelColor=0a1628" alt="Landing Page" /></a>
+  <a href="https://aungthumyint.github.io/SuMal/"><img src="badges/landing.svg" alt="Landing Page" /></a>
   &nbsp; &nbsp; &nbsp;
-  <a href="https://sumal.vercel.app"><img src="https://img.shields.io/badge/-Web%20App-0a1628?style=for-the-badge&logo=vercel&logoColor=10b981&labelColor=0a1628" alt="Web App" /></a>
+  <a href="https://sumal.vercel.app"><img src="badges/web.svg" alt="Web App" /></a>
   &nbsp; &nbsp; &nbsp;
-  <a href="https://github.com/AungThuMyint/SuMal/releases/latest"><img src="https://img.shields.io/badge/-Android%20APK-0a1628?style=for-the-badge&logo=android&logoColor=10b981&labelColor=0a1628" alt="Android APK" /></a>
+  <a href="https://github.com/AungThuMyint/SuMal/releases/latest"><img src="badges/apk.svg" alt="Android APK" /></a>
 </p>
 
 ## Application Features
