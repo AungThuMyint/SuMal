@@ -6,9 +6,7 @@ Landing Page : https://aungthumyint.github.io/SuMal
 
 Web App : https://sumal.vercel.app
 
-Android APK : [⬇️ Download APK](https://github.com/AungThuMyint/SuMal/releases/latest)
-
-Developed by Aung Thu Myint © 2026
+Android APK : download from [Releases](https://github.com/AungThuMyint/SuMal/releases/latest)
 
 ## Application Features
 
@@ -48,3 +46,5 @@ Developed by Aung Thu Myint © 2026
 | Sync      | Google Drive API (Google OAuth)     |
 | Storage   | AES-256-GCM encrypted, PBKDF2 key derivation |
 | Hosting   | Vercel                              |
+
+Developed by Aung Thu Myint © 2026
