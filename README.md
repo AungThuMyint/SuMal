@@ -19,6 +19,15 @@ Android APK : [Releases](https://github.com/AungThuMyint/SuMal/releases/latest)
 - **Encryption** — your backup is encrypted before it ever leaves your device
 - **Dark & Light** — automatic themes with careful contrast for both
 
+## What Makes SuMal Different
+
+- **Precise savings calculation** — term-based savings plans with exact interest, not just a simple running total
+- **Your data, your Drive** — every backup is stored encrypted in your own Google Drive; no third-party server, no tracking, no lock-in
+- **Privacy-first encryption** — data is encrypted (AES-256-GCM + PBKDF2) before it ever leaves your device
+- **Expression calculator** — type math like `(25000*3)+15000` directly when logging a transaction
+- **Deep customisation** — 139 icons across 16 groups and 14 theme-aware colours
+- **Offline & installable** — works as a web app and installs as a native Android APK
+
 ## Use Cases
 
 - **Personal budgeting** — plan monthly budgets and see spending against limits at a glance
