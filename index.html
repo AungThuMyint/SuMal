@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuMal - MoneyManager</title>
+    <meta name="description" content="SuMal - a private, fast money manager. Track income, expenses and savings. Your data is encrypted and stored in your own Google Drive." />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #050d1a;
+        --bg-2: #0b1526;
+        --card: #0e1a2e;
+        --border: #1d2c47;
+        --text: #e2e8f0;
+        --muted: #8fa3bf;
+        --accent: #14b8a6;
+        --accent-2: #0ea5e9;
+        --navy: #0f2a43;
+        --radius: 16px;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+      header {
+        position: sticky; top: 0; z-index: 50;
+        background: rgba(5, 13, 26, 0.85);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+      .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; color: var(--text); }
+      .brand img { width: 32px; height: 32px; border-radius: 8px; }
+      .nav-links { display: flex; align-items: center; gap: 24px; font-size: 14px; font-weight: 500; }
+      .nav-links a { color: var(--muted); }
+      .nav-links a:hover { color: var(--text); text-decoration: none; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 10px 18px; border-radius: 10px; font-weight: 700; font-size: 14px;
+        background: var(--accent); color: #03131c; border: none; cursor: pointer;
+        transition: transform .15s ease, box-shadow .15s ease;
+      }
+      .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(20, 184, 166, 0.35); text-decoration: none; }
+      .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+      .btn-ghost:hover { box-shadow: none; background: var(--card); }
+      .nav .btn { padding: 8px 14px; }
+
+      .hero { padding: 96px 0 72px; text-align: center; }
+      .hero img.logo { width: 96px; height: 96px; border-radius: 24px; box-shadow: 0 20px 60px rgba(20, 184, 166, 0.25); }
+      .hero h1 { font-size: clamp(34px, 6vw, 56px); font-weight: 800; letter-spacing: -0.03em; margin: 24px 0 12px; }
+      .hero p.tag { font-size: clamp(16px, 2.5vw, 20px); color: var(--muted); max-width: 640px; margin: 0 auto 32px; }
+      .hero .cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+      .badge {
+        display: inline-block; margin-top: 28px; padding: 6px 14px; border-radius: 999px;
+        background: rgba(20, 184, 166, 0.12); border: 1px solid rgba(20, 184, 166, 0.4);
+        color: var(--accent); font-size: 13px; font-weight: 600;
+      }
+
+      section { padding: 64px 0; }
+      section h2 { font-size: clamp(24px, 4vw, 32px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+      section .sub { color: var(--muted); margin-bottom: 36px; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+      .card {
+        background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+        padding: 22px; transition: transform .15s ease, border-color .15s ease;
+      }
+      .card:hover { transform: translateY(-2px); border-color: rgba(20, 184, 166, 0.5); }
+      .card .ic { font-size: 22px; }
+      .card h3 { font-size: 16px; font-weight: 700; margin: 10px 0 6px; }
+      .card p { color: var(--muted); font-size: 14px; }
+
+      .twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+      .use { display: flex; gap: 12px; padding: 18px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+      .use .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); margin-top: 7px; flex-shrink: 0; }
+      .use h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+      .use p { color: var(--muted); font-size: 14px; }
+
+      .platforms { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+      .plat { background: linear-gradient(145deg, var(--card), var(--bg-2)); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; text-align: center; }
+      .plat .ic { font-size: 30px; }
+      .plat h3 { margin: 12px 0 6px; font-size: 17px; }
+      .plat p { color: var(--muted); font-size: 14px; margin-bottom: 14px; }
+
+      table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+      th, td { text-align: left; padding: 14px 18px; font-size: 14px; }
+      th { background: var(--bg-2); color: var(--text); font-weight: 600; }
+      td { color: var(--muted); border-top: 1px solid var(--border); }
+      td:first-child { color: var(--text); font-weight: 600; }
+
+      footer { border-top: 1px solid var(--border); padding: 40px 0; margin-top: 32px; }
+      .footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+      .footer .brand img { width: 24px; height: 24px; }
+      @media (max-width: 760px) {
+        .twocol { grid-template-columns: 1fr; }
+        .nav-links { display: none; }
+        .hero { padding: 64px 0 48px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="#top"><img src="logo.png" alt="SuMal logo" />SuMal</a>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#use-cases">Use Cases</a>
+          <a href="#platforms">Platforms</a>
+          <a href="#tech">Tech Stack</a>
+        </nav>
+        <a class="btn" href="https://github.com/AungThuMyint/SuMal-MoneyManager/releases" target="_blank" rel="noopener">Download APK</a>
+      </div>
+    </header>
+
+    <div id="top"></div>
+    <div class="hero wrap">
+      <img class="logo" src="logo.png" alt="SuMal logo" />
+      <h1>Your money, your rules.</h1>
+      <p class="tag">SuMal is a private, fast money manager for tracking income, expenses and savings. Your data is encrypted and lives only in your own Google Drive.</p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/AungThuMyint/SuMal-MoneyManager/releases" target="_blank" rel="noopener">Download Android APK</a>
+        <a class="btn btn-ghost" href="https://sumal.vercel.app" target="_blank" rel="noopener">Open Web App</a>
+      </div>
+      <div class="badge">No server. No tracking. No third-party cloud.</div>
+    </div>
+
+    <section id="features">
+      <div class="wrap">
+        <h2>Application Features</h2>
+        <p class="sub">Everything you need to stay on top of your money — without leaving your data behind.</p>
+        <div class="grid">
+          <div class="card"><span class="ic">🧾</span><h3>Transactions</h3><p>Income, expense and saving entries with an in-app calculator and expression input.</p></div>
+          <div class="card"><span class="ic">🏷️</span><h3>Categories</h3><p>Fully customisable — 139 icons across 16 groups plus 14 theme-aware colours.</p></div>
+          <div class="card"><span class="ic">🎯</span><h3>Budgets</h3><p>Monthly limits per category with live progress tracking.</p></div>
+          <div class="card"><span class="ic">💹</span><h3>Savings</h3><p>Term-based savings plans with precise interest calculation.</p></div>
+          <div class="card"><span class="ic">📊</span><h3>Reports</h3><p>Date-range summaries and CSV export for your own records.</p></div>
+          <div class="card"><span class="ic">🕐</span><h3>History</h3><p>Day-grouped timeline with search, filters and inline edit/delete.</p></div>
+          <div class="card"><span class="ic">🔒</span><h3>Encryption</h3><p>Your backup is encrypted before it ever leaves your device.</p></div>
+          <div class="card"><span class="ic">🌗</span><h3>Dark &amp; Light</h3><p>Automatic themes with careful contrast for both.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases">
+      <div class="wrap">
+        <h2>Use Cases</h2>
+        <p class="sub">Who SuMal is made for and how it fits into daily life.</p>
+        <div class="grid">
+          <div class="use"><span class="dot"></span><div><h3>Personal budgeting</h3><p>Plan monthly budgets and see spending against limits at a glance.</p></div></div>
+          <div class="use"><span class="dot"></span><div><h3>Savings planning</h3><p>Model term-based savings with interest to reach a goal on time.</p></div></div>
+          <div class="use"><span class="dot"></span><div><h3>Expense tracking</h3><p>Log everyday income and expenses in seconds with the calculator.</p></div></div>
+          <div class="use"><span class="dot"></span><div><h3>Privacy-first users</h3><p>Keep financial data in your own Google Drive — never on a third-party server.</p></div></div>
+          <div class="use"><span class="dot"></span><div><h3>Small business</h3><p>Track cash flow, export CSV reports and review period summaries.</p></div></div>
+          <div class="use"><span class="dot"></span><div><h3>Offline-friendly</h3><p>Works as a web app and installs as a native Android APK.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="platforms">
+      <div class="wrap">
+        <h2>Supported Platforms</h2>
+        <p class="sub">Use SuMal anywhere — mobile or desktop.</p>
+        <div class="platforms">
+          <div class="plat"><span class="ic">🤖</span><h3>Android</h3><p>Native APK built with Capacitor.</p><a class="btn" href="https://github.com/AungThuMyint/SuMal-MoneyManager/releases" target="_blank" rel="noopener">Get APK</a></div>
+          <div class="plat"><span class="ic">🌐</span><h3>Web / PWA</h3><p>Installable web app, hosted on Vercel.</p><a class="btn btn-ghost" href="https://sumal.vercel.app" target="_blank" rel="noopener">Open Web App</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech">
+      <div class="wrap">
+        <h2>Built With</h2>
+        <p class="sub">A modern, lightweight stack.</p>
+        <table>
+          <tbody>
+            <tr><td>UI</td><td>React 19 + TypeScript</td></tr>
+            <tr><td>Styling</td><td>Tailwind CSS v4</td></tr>
+            <tr><td>Build</td><td>Vite 8</td></tr>
+            <tr><td>Native</td><td>Capacitor 8 (Android)</td></tr>
+            <tr><td>Sync</td><td>Google Drive API (Google OAuth)</td></tr>
+            <tr><td>Storage</td><td>AES-256-GCM encrypted, PBKDF2 key derivation</td></tr>
+            <tr><td>Hosting</td><td>Vercel</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap footer">
+        <div class="brand"><img src="logo.png" alt="SuMal logo" />SuMal - MoneyManager</div>
+        <div>Web app: <a href="https://sumal.vercel.app" target="_blank" rel="noopener">sumal.vercel.app</a> · APK: <a href="https://github.com/AungThuMyint/SuMal-MoneyManager/releases" target="_blank" rel="noopener">Releases</a></div>
+        <div>© 2026 Aung Thu Myint. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>
