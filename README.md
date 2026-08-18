@@ -5,11 +5,11 @@
 A public, fast money manager for tracking **income, expenses and savings**. Built as a mobile-first web app and wrapped in an Android APK via Capacitor. Your data is encrypted and stored in **your own Google Drive** — not on any third-party server.
 
 <p align="center">
-  <a href="https://aungthumyint.github.io/SuMal"><img src="https://cdn.simpleicons.org/githubpages/10b981" width="18" height="18" align="middle" alt="" />&nbsp; <b>Landing Page</b></a>
+  <a href="https://aungthumyint.github.io/SuAl"><img src="https://img.shields.io/badge/-Landing%20Page-0a1628?logo=googlechrome&logoColor=10b981&labelColor=0a1628" alt="Landing Page" /></a>
   &nbsp; &nbsp; &nbsp;
-  <a href="https://sumal.vercel.app"><img src="https://cdn.simpleicons.org/vercel/10b981" width="18" height="18" align="middle" alt="" />&nbsp; <b>Web App</b></a>
+  <a href="https://sumal.vercel.app"><img src="https://img.shields.io/badge/-Web%20App-0a1628?logo=vercel&logoColor=10b981&labelColor=0a1628" alt="Web App" /></a>
   &nbsp; &nbsp; &nbsp;
-  <a href="https://github.com/AungThuMyint/SuMal/releases/latest"><img src="https://cdn.simpleicons.org/android/10b981" width="18" height="18" align="middle" alt="" />&nbsp; <b>Android APK</b></a>
+  <a href="https://github.com/AungThuMyint/SuAl/releases/latest"><img src="https://img.shields.io/badge/-Android%20APK-0a1628?logo=android&logoColor=10b981&labelColor=0a1628" alt="Android APK" /></a>
 </p>
 
 ## Application Features
