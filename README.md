@@ -5,11 +5,11 @@
 A public, fast money manager for tracking **income, expenses and savings**. Built as a mobile-first web app and wrapped in an Android APK via Capacitor. Your data is encrypted and stored in **your own Google Drive** — not on any third-party server.
 
 <p align="center">
-  <a href="https://aungthumyint.github.io/SuMal"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzRkMzk5IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48cGF0aCBkPSJNMiAxMmgyME0xMiAyYTE1LjMgMTUuMyAwIDAgMSA0IDEwIDE1LjMgMTUuMyAwIDAgMS00IDEwIDE1LjMgMTUuMyAwIDAgMS00LTEwIDE1LjMgMTUuMyAwIDAgMSA0LTEweiIvPjwvc3ZnPg==" width="18" height="18" align="middle" />&nbsp; <b>Landing Page</b></a>
+  <a href="https://aungthumyint.github.io/SuMal"><img src="https://cdn.simpleicons.org/githubpages/10b981" width="18" height="18" align="middle" alt="" />&nbsp; <b>Landing Page</b></a>
   &nbsp; &nbsp; &nbsp;
-  <a href="https://sumal.vercel.app"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzRkMzk5IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHJlY3QgeD0iMiIgeT0iNCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE0IiByeD0iMiIvPjxwYXRoIGQ9Ik0yIDloMjBNNiA3aC4wMU05IDdoLjAxTTEyIDdoLjAxIi8+PC9zdmc+" width="18" height="18" align="middle" />&nbsp; <b>Web App</b></a>
+  <a href="https://sumal.vercel.app"><img src="https://cdn.simpleicons.org/vercel/10b981" width="18" height="18" align="middle" alt="" />&nbsp; <b>Web App</b></a>
   &nbsp; &nbsp; &nbsp;
-  <a href="https://github.com/AungThuMyint/SuMal/releases/latest"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzRkMzk5IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHJlY3QgeD0iNiIgeT0iMiIgd2lkdGg9IjEyIiBoZWlnaHQ9IjIwIiByeD0iMiIvPjxwYXRoIGQ9Ik0xMSAxOGgyIi8+PC9zdmc+" width="18" height="18" align="middle" />&nbsp; <b>Android APK</b></a>
+  <a href="https://github.com/AungThuMyint/SuMal/releases/latest"><img src="https://cdn.simpleicons.org/android/10b981" width="18" height="18" align="middle" alt="" />&nbsp; <b>Android APK</b></a>
 </p>
 
 ## Application Features
