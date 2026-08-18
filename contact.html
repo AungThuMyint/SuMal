@@ -48,13 +48,16 @@
       footer { border-top: 1px solid var(--border); padding: 28px 0; }
       .footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
       .footer .brand img { width: 24px; height: 24px; }
-      @media (max-width: 760px) { .nav-links { display: none; } }
+      @media (max-width: 760px) {
+        .nav { flex-wrap: wrap; height: auto; padding: 12px 0; row-gap: 10px; }
+        .nav-links { gap: 14px; font-size: 13px; flex-wrap: wrap; }
+      }
     </style>
   </head>
   <body>
     <header>
       <div class="wrap nav">
-        <a class="brand" href="index.html"><img src="Logo/icon-512.png" alt="SuMal logo" />SuMal - MoneyManager</a>
+        <a class="brand" href="index.html"><img src="Logo/icon-512.png" alt="SuMal logo" />SuMal</a>
         <nav class="nav-links">
           <a href="index.html#features">Features</a>
           <a href="index.html#use-cases">Use Cases</a>

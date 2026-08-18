@@ -107,7 +107,8 @@
       .footer .brand img { width: 24px; height: 24px; }
       @media (max-width: 760px) {
         .twocol { grid-template-columns: 1fr; }
-        .nav-links { display: none; }
+        .nav { flex-wrap: wrap; height: auto; padding: 12px 0; row-gap: 10px; }
+        .nav-links { gap: 14px; font-size: 13px; flex-wrap: wrap; }
         .hero { padding: 64px 0 48px; }
       }
     </style>
@@ -115,7 +116,7 @@
   <body>
     <header>
       <div class="wrap nav">
-        <a class="brand" href="#top"><img src="Logo/icon-512.png" alt="SuMal logo" />SuMal - MoneyManager</a>
+        <a class="brand" href="#top"><img src="Logo/icon-512.png" alt="SuMal logo" />SuMal</a>
         <nav class="nav-links">
           <a href="#features">Features</a>
           <a href="#difference">Why SuMal</a>
