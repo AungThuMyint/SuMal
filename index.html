@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -78,7 +78,8 @@
         padding: 22px; transition: transform .15s ease, border-color .15s ease;
       }
       .card:hover { transform: translateY(-2px); border-color: rgba(20, 184, 166, 0.5); }
-      .card .ic { font-size: 22px; }
+      .card .ic { display: inline-flex; }
+      .card .ic svg { width: 22px; height: 22px; color: var(--accent); }
       .card h3 { font-size: 16px; font-weight: 700; margin: 10px 0 6px; }
       .card p { color: var(--muted); font-size: 14px; }
 
@@ -90,7 +91,8 @@
 
       .platforms { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
       .plat { background: linear-gradient(145deg, var(--card), var(--bg-2)); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; text-align: center; }
-      .plat .ic { font-size: 30px; }
+      .plat .ic { display: inline-flex; justify-content: center; }
+      .plat .ic svg { width: 30px; height: 30px; color: var(--accent); }
       .plat h3 { margin: 12px 0 6px; font-size: 17px; }
       .plat p { color: var(--muted); font-size: 14px; margin-bottom: 14px; }
 
@@ -133,22 +135,22 @@
         <a class="btn" href="https://github.com/AungThuMyint/SuMal/releases/latest" target="_blank" rel="noopener">Download Android APK</a>
         <a class="btn btn-ghost" href="https://sumal.vercel.app" target="_blank" rel="noopener">Open Web App</a>
       </div>
-      <div class="badge">No server Â· No tracking Â· No third-party cloud</div>
+      <div class="badge">No server · No tracking · No third-party cloud</div>
     </div>
 
     <section id="features">
       <div class="wrap">
         <h2>Application Features</h2>
-        <p class="sub">Everything you need to stay on top of your money â€” without leaving your data behind.</p>
+        <p class="sub">Everything you need to stay on top of your money — without leaving your data behind.</p>
         <div class="grid">
-          <div class="card"><span class="ic">ðŸ§¾</span><h3>Transactions</h3><p>Income, expense and saving entries with an in-app calculator and expression input.</p></div>
-          <div class="card"><span class="ic">ðŸ·ï¸</span><h3>Categories</h3><p>Fully customisable â€” 139 icons across 16 groups plus 14 theme-aware colours.</p></div>
-          <div class="card"><span class="ic">ðŸŽ¯</span><h3>Budgets</h3><p>Monthly limits per category with live progress tracking.</p></div>
-          <div class="card"><span class="ic">ðŸ’¹</span><h3>Savings</h3><p>Term-based savings plans with precise interest calculation.</p></div>
-          <div class="card"><span class="ic">ðŸ“Š</span><h3>Reports</h3><p>Date-range summaries and CSV export for your own records.</p></div>
-          <div class="card"><span class="ic">ðŸ•</span><h3>History</h3><p>Day-grouped timeline with search, filters and inline edit/delete.</p></div>
-          <div class="card"><span class="ic">ðŸ”’</span><h3>Encryption</h3><p>Your backup is encrypted before it ever leaves your device.</p></div>
-          <div class="card"><span class="ic">ðŸŒ—</span><h3>Dark &amp; Light</h3><p>Automatic themes with careful contrast for both.</p></div>
+          <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span><h3>Transactions</h3><p>Income, expense and saving entries with an in-app calculator and expression input.</p></div>
+          <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 11 3.8A2 2 0 0 0 9.6 3H5a2 2 0 0 0-2 2v4.6c0 .5.2 1 .6 1.4l9.6 9.6a2 2 0 0 0 2.8 0l4.6-4.6a2 2 0 0 0 0-2.8Z"/><circle cx="8" cy="8" r="1.5"/></svg></span><h3>Categories</h3><p>Fully customisable — 139 icons across 16 groups plus 14 theme-aware colours.</p></div>
+          <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg></span><h3>Budgets</h3><p>Monthly limits per category with live progress tracking.</p></div>
+          <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><h3>Savings</h3><p>Term-based savings plans with precise interest calculation.</p></div>
+          <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20V10"/><path d="M12 20V4"/><path d="M18 20v-6"/></svg></span><h3>Reports</h3><p>Date-range summaries and CSV export for your own records.</p></div>
+          <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>History</h3><p>Day-grouped timeline with search, filters and inline edit/delete.</p></div>
+          <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><h3>Encryption</h3><p>Your backup is encrypted before it ever leaves your device.</p></div>
+          <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></span><h3>Dark &amp; Light</h3><p>Automatic themes with careful contrast for both.</p></div>
         </div>
       </div>
     </section>
@@ -161,7 +163,7 @@
           <div class="use"><span class="dot"></span><div><h3>Personal budgeting</h3><p>Plan monthly budgets and see spending against limits at a glance.</p></div></div>
           <div class="use"><span class="dot"></span><div><h3>Savings planning</h3><p>Model term-based savings with interest to reach a goal on time.</p></div></div>
           <div class="use"><span class="dot"></span><div><h3>Expense tracking</h3><p>Log everyday income and expenses in seconds with the calculator.</p></div></div>
-          <div class="use"><span class="dot"></span><div><h3>Privacy-first users</h3><p>Keep financial data in your own Google Drive â€” never on a third-party server.</p></div></div>
+          <div class="use"><span class="dot"></span><div><h3>Privacy-first users</h3><p>Keep financial data in your own Google Drive — never on a third-party server.</p></div></div>
           <div class="use"><span class="dot"></span><div><h3>Small business</h3><p>Track cash flow, export CSV reports and review period summaries.</p></div></div>
           <div class="use"><span class="dot"></span><div><h3>Offline-friendly</h3><p>Works as a web app and installs as a native Android APK.</p></div></div>
         </div>
@@ -171,10 +173,10 @@
     <section id="platforms">
       <div class="wrap">
         <h2>Supported Platforms</h2>
-        <p class="sub">Use SuMal anywhere â€” mobile or desktop.</p>
+        <p class="sub">Use SuMal anywhere — mobile or desktop.</p>
         <div class="platforms">
-          <div class="plat"><span class="ic">ðŸ¤–</span><h3>Android</h3><p>Native APK built with Capacitor.</p><a class="btn" href="https://github.com/AungThuMyint/SuMal/releases/latest" target="_blank" rel="noopener">Get APK</a></div>
-          <div class="plat"><span class="ic">ðŸŒ</span><h3>Web / PWA</h3><p>Installable web app, hosted on Vercel.</p><a class="btn btn-ghost" href="https://sumal.vercel.app" target="_blank" rel="noopener">Open Web App</a></div>
+          <div class="plat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg></span><h3>Android</h3><p>Native APK built with Capacitor.</p><a class="btn" href="https://github.com/AungThuMyint/SuMal/releases/latest" target="_blank" rel="noopener">Get APK</a></div>
+          <div class="plat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.6 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.6-4-9s1.5-6.5 4-9Z"/></svg></span><h3>Web / PWA</h3><p>Installable web app, hosted on Vercel.</p><a class="btn btn-ghost" href="https://sumal.vercel.app" target="_blank" rel="noopener">Open Web App</a></div>
         </div>
       </div>
     </section>
@@ -200,7 +202,7 @@
     <footer>
       <div class="wrap footer">
         <div class="brand"><img src="Logo/icon-512.png" alt="SuMal logo" />SuMal - MoneyManager</div>
-        <div>Web App: <a href="https://sumal.vercel.app" target="_blank" rel="noopener">sumal.vercel.app</a> Â· APK: <a href="https://github.com/AungThuMyint/SuMal/releases/latest" target="_blank" rel="noopener">Releases</a></div>
+        <div>Web App: <a href="https://sumal.vercel.app" target="_blank" rel="noopener">sumal.vercel.app</a> · APK: <a href="https://github.com/AungThuMyint/SuMal/releases/latest" target="_blank" rel="noopener">Releases</a></div>
         <div>Developed by Aung Thu Myint</div>
       </div>
     </footer>
