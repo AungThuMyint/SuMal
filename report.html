@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Issue - SuMal</title>
+    <meta name="description" content="Report an issue with SuMal - MoneyManager" />
+    <link rel="icon" type="image/png" href="Logo/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #050d1a;
+        --card: #0e1a2e;
+        --border: #1d2c47;
+        --text: #e2e8f0;
+        --muted: #8fa3bf;
+        --accent: #14b8a6;
+        --radius: 16px;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; min-height: 100vh; display: flex; flex-direction: column; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+      header { position: sticky; top: 0; z-index: 50; background: rgba(5, 13, 26, 0.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+      .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+      .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; color: var(--text); }
+      .brand img { width: 32px; height: 32px; border-radius: 8px; }
+      .nav-links { display: flex; align-items: center; gap: 24px; font-size: 14px; font-weight: 500; }
+      .nav-links a { color: var(--muted); }
+      .nav-links a:hover { color: var(--text); text-decoration: none; }
+      .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 10px; font-weight: 700; font-size: 14px; background: var(--accent); color: #03131c; border: none; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
+      .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(20, 184, 166, 0.35); text-decoration: none; }
+      .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+      .btn-ghost:hover { box-shadow: none; background: var(--card); }
+      .nav .btn { padding: 8px 14px; }
+      main { flex: 1; }
+      .page { padding: 80px 0 60px; }
+      .page h1 { font-size: clamp(30px, 5vw, 40px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; }
+      .page .sub { color: var(--muted); margin-bottom: 40px; max-width: 560px; }
+      .card { max-width: 560px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; }
+      .card p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+      .steps { list-style: none; margin-bottom: 24px; }
+      .steps li { display: flex; gap: 12px; padding: 10px 0; color: var(--muted); font-size: 14px; border-top: 1px solid var(--border); }
+      .steps li:first-child { border-top: none; }
+      .steps .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-top: 7px; flex-shrink: 0; }
+      footer { border-top: 1px solid var(--border); padding: 28px 0; }
+      .footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+      .footer .brand img { width: 24px; height: 24px; }
+      @media (max-width: 760px) { .nav-links { display: none; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="index.html"><img src="Logo/icon-512.png" alt="SuMal logo" />SuMal - MoneyManager</a>
+        <nav class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#use-cases">Use Cases</a>
+          <a href="index.html#platforms">Platforms</a>
+          <a href="index.html#tech">Tech Stack</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="report.html">Report Issue</a>
+        </nav>
+        <a class="btn" href="https://github.com/AungThuMyint/SuMal/releases/latest" target="_blank" rel="noopener">Download APK</a>
+      </div>
+    </header>
+
+    <main class="wrap page">
+      <h1>Report an Issue</h1>
+      <p class="sub">Found a bug or something that doesn't work as expected? Let us know — we'll look into it.</p>
+      <div class="card">
+        <p>Bugs and feature requests are tracked on GitHub. Click the button below to open the issue tracker, where you can describe the problem, attach details, and follow the fix.</p>
+        <ul class="steps">
+          <li><span class="dot"></span><span>Describe what happened and what you expected</span></li>
+          <li><span class="dot"></span><span>Mention your platform (Android APK or Web app)</span></li>
+          <li><span class="dot"></span><span>Attach screenshots or steps to reproduce if possible</span></li>
+        </ul>
+        <a class="btn" href="https://github.com/AungThuMyint/SuMal/issues" target="_blank" rel="noopener">Report on GitHub</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap footer">
+        <div class="brand"><img src="Logo/icon-512.png" alt="SuMal logo" />SuMal - MoneyManager</div>
+        <div>Developed by Aung Thu Myint</div>
+      </div>
+    </footer>
+  </body>
+</html>
