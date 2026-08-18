@@ -1,4 +1,4 @@
-<img src="icon-512.png" alt="SuMal logo" width="120" />
+<img src="https://github.com/AungThuMyint/SuMal/blob/main/Logo/logo.png" alt="SuMal logo" width="120" />
 
 A private, fast money manager for tracking income, expenses and savings. Your data is encrypted and stored only in your own Google Drive.
 
