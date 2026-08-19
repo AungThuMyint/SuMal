@@ -5,9 +5,9 @@
 A public, fast money manager for tracking **income, expenses and savings**. Built as a mobile-first web app and wrapped in an Android APK via Capacitor. Your data is encrypted and stored in **your own Google Drive** — not on any third-party server. **Ad-free and free forever** — no subscriptions, no account needed.
 
 <p align="center">
-  <a href="https://aungthumyint.github.io/SuMal/"><img src="badges/landing.svg" alt="Landing Page" /></a>
+  <a href="https://sumal.syscloudmyanmar.com/"><img src="badges/landing.svg" alt="Landing Page" /></a>
   &nbsp; &nbsp; &nbsp;
-  <a href="https://sumal.vercel.app"><img src="badges/web.svg" alt="Web App" /></a>
+  <a href="https://app.sumal.syscloudmyanmar.com"><img src="badges/web.svg" alt="Web App" /></a>
   &nbsp; &nbsp; &nbsp;
   <a href="https://github.com/AungThuMyint/SuMal/releases/latest"><img src="badges/apk.svg" alt="Android APK" /></a>
 </p>
