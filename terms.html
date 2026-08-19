@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Report Issue - SuMal</title>
-    <meta name="description" content="Report an issue with SuMal - MoneyManager" />
+    <title>Terms of Service - SuMal</title>
+    <meta name="description" content="Terms of Service for SuMal - MoneyManager. Free to use, provided as-is." />
     <link rel="icon" type="image/png" href="Logo/Logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
         --radius: 16px;
       }
       * { margin: 0; padding: 0; box-sizing: border-box; }
-      body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; min-height: 100vh; display: flex; flex-direction: column; }
+      body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; min-height: 100vh; display: flex; flex-direction: column; }
       a { color: var(--accent); text-decoration: none; }
       a:hover { text-decoration: underline; }
       .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
@@ -31,11 +31,6 @@
       .nav-links { display: flex; align-items: center; gap: 24px; font-size: 14px; font-weight: 500; }
       .nav-links a { color: var(--muted); }
       .nav-links a:hover { color: var(--text); text-decoration: none; }
-      .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 10px; font-weight: 700; font-size: 14px; background: var(--accent); color: #03131c; border: none; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
-      .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(20, 184, 166, 0.35); text-decoration: none; }
-      .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
-      .btn-ghost:hover { box-shadow: none; background: var(--card); }
-      .nav .btn { padding: 8px 14px; }
       .nav-actions { display: flex; align-items: center; gap: 10px; }
       .nav-toggle { display: none; width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--text); align-items: center; justify-content: center; cursor: pointer; }
       .nav-toggle:hover { border-color: rgba(20, 184, 166, 0.5); }
@@ -44,15 +39,17 @@
       .mobile-nav a:hover { background: var(--card); color: var(--text); }
       .mobile-nav.open { display: flex; }
       main { flex: 1; }
-      .page { padding: 80px 24px 60px; }
+      .page { padding: 72px 24px 60px; }
       .page h1 { font-size: clamp(30px, 5vw, 40px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; }
-      .page .sub { color: var(--muted); margin-bottom: 40px; max-width: 560px; }
-      .card { max-width: 560px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; }
-      .card p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
-      .steps { list-style: none; margin-bottom: 24px; }
-      .steps li { display: flex; gap: 12px; padding: 10px 0; color: var(--muted); font-size: 14px; border-top: 1px solid var(--border); }
-      .steps li:first-child { border-top: none; }
-      .steps .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-top: 7px; flex-shrink: 0; }
+      .page .updated { color: var(--muted); font-size: 13px; margin-bottom: 40px; }
+      .legal { max-width: 720px; display: flex; flex-direction: column; gap: 18px; }
+      .legal section { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 26px; }
+      .legal h2 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+      .legal p { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+      .legal p:last-child { margin-bottom: 0; }
+      .legal ul { color: var(--muted); font-size: 14px; padding-left: 20px; margin-bottom: 10px; }
+      .legal li { margin-bottom: 6px; }
+      .legal li:last-child { margin-bottom: 0; }
       footer { border-top: 1px solid var(--border); padding: 28px 0; }
       .footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
       .footer .brand img { width: 24px; height: 24px; }
@@ -63,7 +60,7 @@
         .nav-links { display: none; }
         .nav-toggle { display: inline-flex; }
         .page { padding: 48px 20px 40px; }
-        .card { padding: 20px; }
+        .legal section { padding: 20px; }
       }
       @media (min-width: 761px) {
         .mobile-nav { display: none !important; }
@@ -99,16 +96,89 @@
     </header>
 
     <main class="wrap page">
-      <h1>Report an Issue</h1>
-      <p class="sub">Found a bug or something that doesn't work as expected? Let us know — we'll look into it.</p>
-      <div class="card">
-        <p>Bugs and feature requests are tracked on GitHub. Click the button below to open the issue tracker, where you can describe the problem, attach details, and follow the fix.</p>
-        <ul class="steps">
-          <li><span class="dot"></span><span>Describe what happened and what you expected</span></li>
-          <li><span class="dot"></span><span>Mention your platform (Android APK or Web app)</span></li>
-          <li><span class="dot"></span><span>Attach screenshots or steps to reproduce if possible</span></li>
-        </ul>
-        <a class="btn" href="https://github.com/AungThuMyint/SuMal/issues" target="_blank" rel="noopener">Report on GitHub</a>
+      <h1>Terms of Service</h1>
+      <p class="updated">Last updated: 19 August 2026</p>
+      <div class="legal">
+        <section>
+          <h2>1. Acceptance of Terms</h2>
+          <p>
+            By downloading, installing or using SuMal (the "App"), you agree to these Terms of Service. If you do not
+            agree, please do not use the App.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. The Service</h2>
+          <p>
+            SuMal is a personal money management tool that lets you record income, expenses and savings. It is provided
+            <strong>free of charge</strong>. Optional sync uses your own Google Drive; optional sign-in uses your
+            Google account. Using the App does not create an account with us, and we operate no servers that store
+            your data.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Your Responsibilities</h2>
+          <ul>
+            <li>You are responsible for the accuracy of the financial information you enter.</li>
+            <li>You are responsible for backing up your data and for protecting any backup password you set. If you
+            lose your password, encrypted backups cannot be recovered by anyone — including us.</li>
+            <li>You are responsible for the security of the device and Google account you use the App with.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Acceptable Use</h2>
+          <p>
+            You agree not to misuse the App, including attempting to disrupt the service, reverse-engineer it, or use
+            it in violation of any applicable law or of Google's terms governing your Google account and Drive.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Google Services</h2>
+          <p>
+            If you use Google sign-in or Drive sync, your use of Google accounts, Drive and related services remains
+            subject to Google's own
+            <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> and
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. No Warranty</h2>
+          <p>
+            The App is provided on an "as is" and "as available" basis, without warranties of any kind, express or
+            implied, including but not limited to fitness for a particular purpose and non-infringement. It is a
+            planning tool, not a substitute for professional financial advice.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Limitation of Liability</h2>
+          <p>
+            To the maximum extent permitted by law, the developer shall not be liable for any indirect, incidental,
+            special or consequential damages, or any loss of data or profits, arising from your use of or inability to
+            use the App, even if advised of the possibility of such damages.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Changes to These Terms</h2>
+          <p>
+            We may update these Terms from time to time. Continued use of the App after changes are posted constitutes
+            acceptance of the revised Terms.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Contact</h2>
+          <p>
+            Questions about these Terms? Email
+            <a href="mailto:info@syscloudmyanmar.com">info@syscloudmyanmar.com</a> or use the
+            <a href="contact.html">Contact page</a>.
+          </p>
+        </section>
       </div>
     </main>
 

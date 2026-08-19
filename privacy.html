@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - SuMal</title>
+    <meta name="description" content="Privacy Policy for SuMal - MoneyManager. Your data stays in your own Google Drive." />
+    <link rel="icon" type="image/png" href="Logo/Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #050d1a;
+        --card: #0e1a2e;
+        --border: #1d2c47;
+        --text: #e2e8f0;
+        --muted: #8fa3bf;
+        --accent: #14b8a6;
+        --radius: 16px;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; min-height: 100vh; display: flex; flex-direction: column; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+      header { position: sticky; top: 0; z-index: 50; background: rgba(5, 13, 26, 0.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+      .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+      .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; color: var(--text); }
+      .brand img { width: 32px; height: 32px; border-radius: 8px; }
+      .nav-links { display: flex; align-items: center; gap: 24px; font-size: 14px; font-weight: 500; }
+      .nav-links a { color: var(--muted); }
+      .nav-links a:hover { color: var(--text); text-decoration: none; }
+      .nav-actions { display: flex; align-items: center; gap: 10px; }
+      .nav-toggle { display: none; width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--text); align-items: center; justify-content: center; cursor: pointer; }
+      .nav-toggle:hover { border-color: rgba(20, 184, 166, 0.5); }
+      .mobile-nav { display: none; flex-direction: column; padding: 4px 0 14px; }
+      .mobile-nav a { padding: 12px 10px; border-radius: 10px; color: var(--muted); font-size: 14px; font-weight: 500; }
+      .mobile-nav a:hover { background: var(--card); color: var(--text); }
+      .mobile-nav.open { display: flex; }
+      main { flex: 1; }
+      .page { padding: 72px 24px 60px; }
+      .page h1 { font-size: clamp(30px, 5vw, 40px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; }
+      .page .updated { color: var(--muted); font-size: 13px; margin-bottom: 40px; }
+      .legal { max-width: 720px; display: flex; flex-direction: column; gap: 18px; }
+      .legal section { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 26px; }
+      .legal h2 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+      .legal p { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+      .legal p:last-child { margin-bottom: 0; }
+      .legal ul { color: var(--muted); font-size: 14px; padding-left: 20px; margin-bottom: 10px; }
+      .legal li { margin-bottom: 6px; }
+      .legal li:last-child { margin-bottom: 0; }
+      footer { border-top: 1px solid var(--border); padding: 28px 0; }
+      .footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+      .footer .brand img { width: 24px; height: 24px; }
+      .footer-links { display: flex; gap: 18px; }
+      .footer-links a { color: var(--muted); }
+      .footer-links a:hover { color: var(--text); }
+      @media (max-width: 760px) {
+        .nav-links { display: none; }
+        .nav-toggle { display: inline-flex; }
+        .page { padding: 48px 20px 40px; }
+        .legal section { padding: 20px; }
+      }
+      @media (min-width: 761px) {
+        .mobile-nav { display: none !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="index.html"><img src="Logo/Icon.png" alt="SuMal logo" />SuMal</a>
+        <nav class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#use-cases">Use Cases</a>
+          <a href="index.html#platforms">Platforms</a>
+          <a href="index.html#tech">Tech Stack</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="report.html">Report Issue</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="nav-toggle" type="button" aria-label="Menu" onclick="toggleNav()"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+      </div>
+      <div class="wrap">
+        <nav class="mobile-nav" id="mobileNav">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#use-cases">Use Cases</a>
+          <a href="index.html#platforms">Platforms</a>
+          <a href="index.html#tech">Tech Stack</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="report.html">Report Issue</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap page">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 19 August 2026</p>
+      <div class="legal">
+        <section>
+          <h2>Overview</h2>
+          <p>
+            SuMal is designed around a simple principle: <strong>your financial data is yours.</strong> There are no
+            developer-run servers storing your transactions, no accounts you sign up for with us, and no third-party
+            cloud holding your records. The app runs entirely on your device, and anything you sync lives inside your
+            own Google Drive.
+          </p>
+        </section>
+
+        <section>
+          <h2>Information We Handle</h2>
+          <ul>
+            <li>
+              <strong>What you enter in the app</strong> — transactions, categories, budgets and settings. These are
+              stored locally on your device and, only if you choose to sync, inside a private folder in your own Google
+              Drive.
+            </li>
+            <li>
+              <strong>Google account profile</strong> — when you sign in with Google (for optional Drive sync), we
+              receive your name, email address and profile picture from Google. This is used only to identify your
+              Drive account and is stored on your device.
+            </li>
+            <li>
+              <strong>Basic web performance data</strong> — the web version of SuMal is hosted on Vercel and uses
+              Vercel Speed Insights, which collects basic, anonymous performance metrics (such as page load speed) to
+              help us keep the app fast. It does not read your financial data.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Where Your Data Lives</h2>
+          <p>
+            Your entries are kept in your browser's local storage or in the app's local storage on Android. If you
+            enable sync, backups are written to a folder named <em>SuMal - MoneyManager</em> that the app creates in
+            your personal Google Drive. When you set a backup password, backups are encrypted (AES-256-GCM with a
+            PBKDF2-derived key) <strong>before they leave your device</strong>, so even Google cannot read them.
+          </p>
+        </section>
+
+        <section>
+          <h2>Google Sign-In and Drive Access</h2>
+          <p>
+            Sign-in is handled by Google Identity Services. SuMal requests only the minimal permissions it needs —
+            your profile (name, email, picture) and <em>drive.file</em>, which lets the app see and edit <strong>only
+            the files it creates</strong> in your Drive. The app cannot read or modify any other file you own.
+          </p>
+          <p>
+            Google's own privacy and terms apply to your Google account. See
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>Sharing and Disclosure</h2>
+          <ul>
+            <li>We do not sell your personal information.</li>
+            <li>We do not share your data with third parties.</li>
+            <li>We do not read, mine, or analyse your financial records.</li>
+            <li>We operate no servers that receive or store your app data.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Security</h2>
+          <ul>
+            <li>Optional end-to-end encryption for backups (AES-256-GCM + PBKDF2-SHA256).</li>
+            <li>Minimal Google Drive scope (<em>drive.file</em>); the app can only touch files it created.</li>
+            <li>No developer-side storage or databases.</li>
+            <li>You control your data and can delete it at any time by clearing the app data and removing the folder from your Drive.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Children</h2>
+          <p>
+            SuMal is not intended for children under 13, and we do not knowingly collect data from children. If you
+            believe a child has provided us with information through Google sign-in, contact us and we will help you
+            remove it.
+          </p>
+        </section>
+
+        <section>
+          <h2>Changes to This Policy</h2>
+          <p>
+            We may update this policy from time to time. Changes take effect when posted on this page, and the "Last
+            updated" date above is revised accordingly.
+          </p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <p>
+            Questions about this policy? Email
+            <a href="mailto:info@syscloudmyanmar.com">info@syscloudmyanmar.com</a> or use the
+            <a href="contact.html">Contact page</a>.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap footer">
+        <div class="brand"><img src="Logo/Icon.png" alt="SuMal logo" />SuMal - MoneyManager</div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <div>Developed by Aung Thu Myint © 2026</div>
+      </div>
+    </footer>
+    <script>
+      function toggleNav() {
+        var m = document.getElementById('mobileNav')
+        if (m) { m.classList.toggle('open') }
+      }
+    </script>
+  </body>
+</html>

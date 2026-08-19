@@ -112,6 +112,9 @@
       footer { border-top: 1px solid var(--border); padding: 40px 0; margin-top: 32px; }
       .footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
       .footer .brand img { width: 24px; height: 24px; }
+      .footer-links { display: flex; gap: 18px; }
+      .footer-links a { color: var(--muted); }
+      .footer-links a:hover { color: var(--text); }
       @media (max-width: 760px) {
         .twocol { grid-template-columns: 1fr; }
         .nav-links { display: none; }
@@ -259,6 +262,10 @@
     <footer>
       <div class="wrap footer">
         <div class="brand"><img src="Logo/Icon.png" alt="SuMal logo" />SuMal - MoneyManager</div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
         <div>Developed by Aung Thu Myint © 2026</div>
       </div>
     </footer>

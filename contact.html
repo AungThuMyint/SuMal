@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - SuMal</title>
-    <meta name="description" content="Contact SuAl - MoneyManager. Business email aungthumyint@syscloudmyanmar.com" />
+    <meta name="description" content="Contact SuMal - MoneyManager. Business email aungthumyint@syscloudmyanmar.com" />
     <link rel="icon" type="image/png" href="Logo/Logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,6 +55,9 @@
       footer { border-top: 1px solid var(--border); padding: 28px 0; }
       .footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
       .footer .brand img { width: 24px; height: 24px; }
+      .footer-links { display: flex; gap: 18px; }
+      .footer-links a { color: var(--muted); }
+      .footer-links a:hover { color: var(--text); }
       @media (max-width: 760px) {
         .nav-links { display: none; }
         .nav-toggle { display: inline-flex; }
@@ -119,6 +122,10 @@
     <footer>
       <div class="wrap footer">
         <div class="brand"><img src="Logo/Icon.png" alt="SuMal logo" />SuMal - MoneyManager</div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
         <div>Developed by Aung Thu Myint © 2026</div>
       </div>
     </footer>
