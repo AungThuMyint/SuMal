@@ -2,7 +2,7 @@
 
 <p align="center"><img src="Logo/Logo.png" alt="SuMal logo" width="120" /></p>
 
-A public, fast money manager for tracking **income, expenses and savings**. Built as a mobile-first web app and wrapped in an Android APK via Capacitor. Your data is encrypted and stored in **your own Google Drive** — not on any third-party server.
+A public, fast money manager for tracking **income, expenses and savings**. Built as a mobile-first web app and wrapped in an Android APK via Capacitor. Your data is encrypted and stored in **your own Google Drive** — not on any third-party server. **Ad-free and free forever** — no subscriptions, no account needed.
 
 <p align="center">
   <a href="https://aungthumyint.github.io/SuMal/"><img src="badges/landing.svg" alt="Landing Page" /></a>
@@ -47,6 +47,13 @@ A public, fast money manager for tracking **income, expenses and savings**. Buil
 | -------- | ----------- |
 | Android  | Native APK built with Capacitor |
 | Web / PWA| Installable web app hosted on Vercel |
+
+## Pricing
+
+- **Ad-free** — no ads, no pop-ups, no noise
+- **Free forever** — no subscriptions, no paywalls; every feature included
+- **No account required** — start instantly, no sign-up
+- **Offline & private** — works offline; data encrypted and stored only in your own Google Drive
 
 ## Built With
 
