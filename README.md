@@ -46,7 +46,7 @@ A public, fast money manager for tracking **income, expenses and savings**. Buil
 | Platform | Description |
 | -------- | ----------- |
 | Android  | Native APK built with Capacitor |
-| Web / PWA| Installable web app hosted on Vercel |
+| Web / PWA| Installable web app |
 
 ## Pricing
 
