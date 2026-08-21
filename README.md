@@ -50,7 +50,7 @@ A public, fast money manager for tracking **income, expenses and savings**. Buil
 
 ## Latest Version
 
-**v1.1.6** — [Download APK](https://github.com/AungThuMyint/SuMal/releases/latest) · [Open Web App](https://app.sumal.syscloudmyanmar.com)
+**v1.1.6**
 
 ## Keyboard Shortcuts (Desktop)
 
