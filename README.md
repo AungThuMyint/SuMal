@@ -54,6 +54,8 @@ A public, fast money manager for tracking **income, expenses and savings**. Buil
 
 ## Keyboard Shortcuts (Desktop)
 
+### Navigation
+
 | Key | Action |
 | --- | ------ |
 | `1` | Home |
@@ -62,9 +64,23 @@ A public, fast money manager for tracking **income, expenses and savings**. Buil
 | `4` | Categories |
 | `5` | Reports |
 | `6` | Settings |
-| `N` | New Entry |
-| `R` | Sync |
-| `Backspace` | Go back / Close modal |
+
+### Actions
+
+| Shortcut | Action |
+| -------- | ------ |
+| `Alt + N` | New Entry |
+| `Alt + B` | New Budget |
+| `Alt + C` | New Category |
+| `/` | Focus search bar |
+| `Escape` | Close modal / dialog |
+
+### Search History
+
+| Key | Action |
+| --- | ------ |
+| `↑` `↓` | Navigate history items |
+| `Enter` | Select history item or search |
 
 ## Pricing
 
