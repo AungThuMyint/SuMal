@@ -1,6 +1,6 @@
 # SuMal - MoneyManager
 
-<p align="center"><img src="Logo/Logo.png" alt="SuMal logo" width="120" /></p>
+<p align="center"><img src="SuMalLogo/SuMal-Favicon.png" alt="SuMal logo" width="120" /></p>
 
 A public, fast money manager for tracking **income, expenses and savings**. Built as a mobile-first web app and wrapped in an Android APK via Capacitor. Your data is encrypted and stored in **your own Google Drive** — not on any third-party server. **Ad-free and free forever** — no subscriptions, no account needed.
 
@@ -47,6 +47,24 @@ A public, fast money manager for tracking **income, expenses and savings**. Buil
 | -------- | ----------- |
 | Android  | Native APK built with Capacitor |
 | Web / PWA| Installable web app |
+
+## Latest Version
+
+**v1.1.6** — [Download APK](https://github.com/AungThuMyint/SuMal/releases/latest) · [Open Web App](https://app.sumal.syscloudmyanmar.com)
+
+## Keyboard Shortcuts (Desktop)
+
+| Key | Action |
+| --- | ------ |
+| `1` | Home |
+| `2` | History |
+| `3` | Budgets |
+| `4` | Categories |
+| `5` | Reports |
+| `6` | Settings |
+| `N` | New Entry |
+| `R` | Sync |
+| `Backspace` | Go back / Close modal |
 
 ## Pricing
 
