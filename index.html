@@ -110,6 +110,7 @@
       th { background: var(--bg-2); color: var(--text); font-weight: 600; }
       td { color: var(--muted); border-top: 1px solid var(--border); }
       td:first-child { color: var(--text); font-weight: 600; }
+      kbd { display: inline-block; padding: 2px 8px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px; background: var(--bg-2); border: 1px solid var(--border); border-radius: 6px; color: var(--accent); font-weight: 600; white-space: nowrap; }
 
       footer { border-top: 1px solid var(--border); padding: 40px 0; margin-top: 32px; }
       .footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
@@ -267,6 +268,40 @@
             <tr><td>Hosting</td><td>Vercel</td></tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <section id="shortcuts">
+      <div class="wrap">
+        <h2>Keyboard Shortcuts</h2>
+        <p class="sub">Desktop shortcuts for faster navigation.</p>
+        <div class="twocol">
+          <div>
+            <h3 style="font-size:15px;font-weight:700;margin-bottom:12px;">Navigation</h3>
+            <table>
+              <tbody>
+                <tr><td><kbd>1</kbd></td><td>Home</td></tr>
+                <tr><td><kbd>2</kbd></td><td>History</td></tr>
+                <tr><td><kbd>3</kbd></td><td>Budgets</td></tr>
+                <tr><td><kbd>4</kbd></td><td>Categories</td></tr>
+                <tr><td><kbd>5</kbd></td><td>Reports</td></tr>
+                <tr><td><kbd>6</kbd></td><td>Settings</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 style="font-size:15px;font-weight:700;margin-bottom:12px;">Actions</h3>
+            <table>
+              <tbody>
+                <tr><td><kbd>Alt</kbd> + <kbd>N</kbd></td><td>New Entry</td></tr>
+                <tr><td><kbd>Alt</kbd> + <kbd>B</kbd></td><td>New Budget</td></tr>
+                <tr><td><kbd>Alt</kbd> + <kbd>C</kbd></td><td>New Category</td></tr>
+                <tr><td><kbd>/</kbd></td><td>Focus search</td></tr>
+                <tr><td><kbd>Esc</kbd></td><td>Close modal / dialog</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
 
