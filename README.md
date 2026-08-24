@@ -67,8 +67,10 @@ A public, fast money manager for tracking **income, expenses and savings**. Buil
 | `2` | History |
 | `3` | Budgets |
 | `4` | Categories |
-| `5` | Reports |
-| `6` | Settings |
+| `5` | Accounts |
+| `6` | Reports |
+| `7` | Settings |
+
 
 ### Actions
 
