@@ -20,6 +20,11 @@ A public, fast money manager for tracking **income, expenses and savings**. Buil
 - **Savings** — term-based savings plans with precise interest calculation
 - **Reports** — date-range summaries and CSV export
 - **History** — day-grouped timeline with search, filters and inline edit/delete
+- **Accounts** — create cash, bank and wallet accounts, assign every entry and see per-account balances
+- **Entry Time** — analog clock picker (12h + AM/PM); defaults to the current moment, shown in history & CSV
+- **Smart Filters** — monthly presets plus type, category and account multi-selects with one-tap Reset
+- **Keyboard Shortcuts** — desktop power tools: `Alt+N/B/C`, `/` to search, `1–6` to navigate, `Esc` to close
+- **Currency** — switch between MMK, USD, THB and more any time in Settings
 - **Encryption** — your backup is encrypted before it ever leaves your device
 - **Dark & Light** — automatic themes with careful contrast for both
 
