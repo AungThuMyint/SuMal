@@ -50,7 +50,7 @@ A public, fast money manager for tracking **income, expenses and savings**. Buil
 
 ## Latest Version
 
-**v1.1.6**
+[![Latest Release](https://img.shields.io/github/v/release/AungThuMyint/SuMal?style=for-the-badge&label=&color=10b981)](https://github.com/AungThuMyint/SuMal/releases/latest)
 
 ## Keyboard Shortcuts (Desktop)
 
